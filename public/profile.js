@@ -17,8 +17,6 @@ function loadImage(inputId, previewId, storageKey) {
 }
 
 loadImage('avatarInput', 'avatarPreview', 'profile-avatar');
-loadImage('bioImg1', 'bioPreview1', 'profile-bioimg1');
-loadImage('bioImg2', 'bioPreview2', 'profile-bioimg2');
 
 $('saveProfile').addEventListener('click', function () {
     localStorage.setItem('profile-name', $('name').value);

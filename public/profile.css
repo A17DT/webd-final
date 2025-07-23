@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Quicksand:wght@400;600&display=swap');
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/lobster.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1f23;
+    margin: 0;
+    border-bottom: 6px solid #687e8b;
+}
+
+.header-left a{
+    text-decoration: none;
+}
+
+.header-left a:hover{
+    text-shadow: 0 0 5px #7d818a;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 60px;
+    color: #acafb6;
+    margin-bottom: 5%;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #acafb6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+
+nav a:active {
+    transform: scale(1.15);
+    color: #8e93a0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: transform 0.1s ease;
+}
+
+nav a:hover {
+    color: #acafb6;
+    text-shadow: 0 0 5px #7d818a;
+    transition: all 0.3s ease;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0d1f23, #132e35, #2c4a52, #687e8b, #687e8b, #2c4a52, #132e35, #0d1f23);
+   }
+
+.profile-page {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.profile-card {
+    background: #1c434d;
+    border-radius: 24px;
+    padding: 2rem;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 8px 24px #04090a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #000000;
+    box-shadow: 0 0 15px #000000;
+    transition: all 0.3s ease-in-out;
+}
+.avatar-glow {
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.input-wrap input,
+textarea,
+.lists input {
+    background: #687e8b54;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    width: 100%;
+    font-size: 1em;
+    color:#ffffff;
+}
+.input-wrap input::placeholder{
+    color:white;
+}
+
+.bio-box {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.bio-box h3 {
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+}
+
+#bio::placeholder{
+    color:white;
+}
+
+textarea {
+    color:white;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.lists input::placeholder{
+    color:white;
+}
+
+button {
+    background: #132e35;
+    color: #fffafa;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bolder;
+    box-shadow: 0 0 15px #000000;
+}
+
+button:hover {
+    background: #1d444e;
+    color: #f7e9e9;
+    box-shadow:0 0 15px #000000;
+}
+
+#saveMsg {
+    margin-top: 12px;
+    font-size: 0.9em;
+    color: #acafb6;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #0d1f23, #132e35);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2c4a52, #687e8b);
+    border-radius: 10px;
+    border: 2px solid #2c4a52;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #acafb6, #5b646b);
+}
