@@ -90,6 +90,15 @@ nav a:hover {
 }
 
 .cta-btn {
+    padding: 15px 35px;
+    font-size: 1rem;
+    background-color: #0d1f23;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
     decoration: none;
 }
 
