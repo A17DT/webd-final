@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill Cloud - Timetable</title>
+    <link rel="stylesheet" href="tt.css" />
+</head>
+<header>
+    <div class="header-left">
+        <a href="landing.html"><h1>📚 StudySync</h1></a>
+        <nav>
+            <ul>
+            <li><a href="tt.html">Timetable</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="chill.html"> Chill Cloud </a></li>
+            <li><a href="music.html">Lofi Music</a></li>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="timetable-container">
+        <h2>Time Table </h2>
+        <table id="timetable">
+            <button id="resetTable">🔄 Reset Table</button>
+            
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Hour</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+            <tbody id="scheduleBody">
+                
+            </tbody>
+        </table>
+        <div class="controls">
+            <input type="text" id="hourInput" placeholder="Hour (e.g. 9 AM)" />
+            <button onclick="addRow()">➕ Add Hour</button>
+
+        </div>
+    </div>
+    <script src="tt.js"></script>
+</body>
+
+</html>
