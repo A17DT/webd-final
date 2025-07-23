@@ -4,6 +4,7 @@ function addRow() {
     if (!time) return;
 
     const row = document.createElement("tr");
+
     const hourCell = document.createElement("td");
     hourCell.textContent = time;
     row.appendChild(hourCell);
@@ -14,12 +15,13 @@ function addRow() {
         row.appendChild(cell);
     }
 
-    document.getElementById("scheduleBody").appendChild(row);~
+    document.getElementById("scheduleBody").appendChild(row);
     hourInput.value = "";
 }
 
 document.getElementById('resetTable').addEventListener('click', () => {
     const tableBody = document.querySelector('#myTable tbody');
-    tableBody.innerHTML = ''; 
+    tableBody.innerHTML = '';
 });
+
 
