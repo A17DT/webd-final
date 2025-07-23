@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In Page</title>
+  <link rel="stylesheet" href="login.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="image">
+      <img src="star.png" alt="Card Image">
+    </div>
+    <div class="form">
+      <h1>Sign In</h1>
+      <form id="signinForm">
+        <div class="input">
+          <input type="text" placeholder="User name" id="usernameInput" required>
+          <input type="email" placeholder="Email" id="emailInput" required>
+          <input type="password" placeholder="Password" id="passwordInput" required>
+        </div>
+        <div id="error">
+          <p id="errorMsg"></p>
+        </div>
+        <button type="submit" class="btn">Log In</button>
+        </form>
+
+      <p class="signup">
+        <a href="signup.html">Don't have an account?</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="login.js"></script> 
+</body>
+</html>
