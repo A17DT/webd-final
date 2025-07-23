@@ -4,6 +4,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// For SPA routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'landing.html'));
+});
 
 const app = express();
 app.use(express.json());
