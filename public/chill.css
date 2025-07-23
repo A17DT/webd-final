@@ -357,13 +357,21 @@ button:hover {
     flex-direction: column;
     gap: 25px;
 }
-
 .task-groups h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.336);
+    padding: 10px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
 }
-
 .task-groups ul {
     list-style: none;
     padding-left: 0;
